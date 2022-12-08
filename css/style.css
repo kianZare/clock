@@ -20,7 +20,8 @@ body {
     position: absolute;
     border-radius: 50%;
     pointer-events: none;
-    animation: 2s ease-in infinite alternate;
+    animation: 5s ease-in infinite alternate;
+    z-index: 0;
 }
 
 .container .circle:nth-child(1) {
@@ -36,7 +37,7 @@ body {
 
 @keyframes move-up {
     to {
-        transform: translateY(-10px);
+        transform: translateY(90px);
     }
 }
 
@@ -53,13 +54,13 @@ body {
 
 @keyframes move-down {
     to {
-        transform: translateY(10px);
+        transform: translateY(-120px);
     }
 }
 
 .clock {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +68,8 @@ body {
     border-radius: 50%;
     backdrop-filter: blur(15px);
     background: rgba(255, 255, 255, .05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 5);
+    z-index: 2;
 }
 
 .clock .clock-bg img {
@@ -152,11 +154,13 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 47%;
+    z-index: 1;
 }
 .k{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    z-index: 1;
 }
 
 
